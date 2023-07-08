@@ -9,10 +9,4 @@ spring:
     multipart:
       max-file-size: 1024MB
       max-request-size: 1024MB
-aliyun:
-  oss:
-    file:
-      bucketname: hhb-yygh
-      endpoint: oss-cn-guangzhou.aliyuncs.com
-      keyid: LTAI5tCm1Fb4fVJzxr3UYvLm
-      keysecret: 6AvOvxyVtQltIBncdjyx0LvunzKJHo
+
