@@ -1,0 +1,40 @@
+server:
+  port: 8160
+spring:
+  application:
+    name: service-user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    url: jdbc:mysql://192.168.135.140:3306/yygh_user?characterEncoding=utf-8&useSSL=false
+    username: root
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  profiles:
+    active: dev
+  redis:
+    database: 0
+    host: 192.168.135.140
+    lettuce:
+      pool:
+        max-active: 20
+        max-idle: 5
+        max-wait: -1
+        min-idle: 0
+    port: 6379
+    timeout: 1800000
+mybatis-plus:
+  mapper-locations: classpath:com/hhb/yygh/user/mapper/xml/*.xml
+
+weixin:
+  appid: wxed9954c01bb89b47
+  appsecret: a7482517235173ddb4083788de60b90e
+  redirecturl: http://localhost:8160/user/userinfo/wx/callback
+
+
+

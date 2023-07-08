@@ -1,0 +1,16 @@
+server:
+  port: 8208
+spring:
+  application:
+    name: service-task
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  profiles:
+    active: dev
+  rabbitmq:
+    host: 192.168.135.140
+    password: guest
+    port: 5672
+    username: guest
